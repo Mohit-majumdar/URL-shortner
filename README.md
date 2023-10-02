@@ -20,7 +20,7 @@ By default, SQLite3 is selected as the database. If you want to use MySQL, pleas
 ```python
 #settings.py
 
-USE_MYSQL = Flase
+USE_MYSQL = False
 ```
 
 Change False to True:
