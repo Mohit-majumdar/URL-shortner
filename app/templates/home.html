@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block body %}
+{% load static %}
+    <div class="container">
+      <h1>Create Short Url</h1>
+
+      <input type="text" id="url" name="q" placeholder="Create Short URL....." />
+      <button class="btn btn-primary" onclick="displayAndfeatch()">Create Short URL</button>
+
+      <div class="container">
+        <div id="loading" style="display: none">Loading...</div>
+        <div id="shorturl"></div>
+        <div id="message"></div>
+      </div>
+    </div>
+    <script>
+      async function displayAndfeatch() {
+        url = document.getElementById("url").value;
+        if(!url){
+          document.getElementById("message").textContent = "Please Add some URL";
+          return
+        }
+        if(! url.startsWith("http") && !url.startsWith("www")  ){
+           document.getElementById("message").textContent = "Not a vaiid URL, URL should start with http or www";
+          return
+          }
+        await get_short_url(url);
+        return false;
+      }
+    </script>
+{% endblock %}

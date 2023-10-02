@@ -1,0 +1,87 @@
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    text-align: right;
+    display: flex;
+    justify-content: end !important;
+}
+
+/* Style for the navigation bar buttons */
+.navbar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+/* Hover effect for buttons */
+.navbar button:hover {
+    background-color: #45a049;
+}
+body {  
+    font-family: Arial, sans-serif;
+    background-image: radial-gradient(circle,#36dd76,#7e84dbd1);
+    text-align: center;
+}
+
+.container {
+    max-width: 500px;
+    margin:  auto;
+    margin-top: 2vh;
+    padding: 20px;
+    background-color: #bdd7cd9e;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button[type="submit"], .create-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button[type="submit"]:hover, .create-button:hover {
+    background-color: #0056b3;
+}
+
+#message{
+    margin-top: 2vh;
+}
+
+a{
+    color:black;
+}
+
+.details{
+    display: flex;
+    
+}
+p{
+    margin-left: 1vh;
+}
+#view:hover{
+    cursor: pointer;
+}
