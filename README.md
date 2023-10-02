@@ -7,7 +7,7 @@ This document provides instructions for setting up your project, including insta
 To install all project dependencies, execute the following command:
 
 ```bash
-pip install -r requirements.txt 
+$ pip install -r requirements.txt 
 ```
 ## Database Configuration
 
@@ -46,7 +46,7 @@ For Migration you need to run following command
 make sure you navigete to your project root
 
 ```bash
-python manage.py makemigrations app
+$ python manage.py makemigrations app
 ```
 
 aftet that migrate database run:
@@ -59,7 +59,7 @@ python manage.py migrate
 For Start Devlopment Server run:
 
 ```bash
-python manage.py runserver
+$ python manage.py runserver
 ```
 
 server will start on http://127.0.0.1:8000
