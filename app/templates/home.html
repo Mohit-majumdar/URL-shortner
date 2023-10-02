@@ -21,7 +21,7 @@
           return
         }
         if(! url.startsWith("http") && !url.startsWith("www")  ){
-           document.getElementById("message").textContent = "Not a vaiid URL, URL should start with http or www";
+           document.getElementById("message").textContent = "Not a valid URL, URL should start with http or www";
           return
           }
         await get_short_url(url);
