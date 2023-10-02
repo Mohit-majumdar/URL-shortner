@@ -16,22 +16,22 @@ By default, SQLite3 is selected as the database. If you want to use MySQL, pleas
 1. open your project's settings file.
 2. Locate the following line of code:
 
-<pre>
+
 ```python
 #settings.py
 
 USE_MYSQL = Flase
 ```
-</pre>
+
 Change False to True:
 
-<pre>
+
 ```python
 #settings.py
 
 USE_MYSQL = True
 ```
-</pre>
+
 
 3. Ensure that you have MySQL installed and running on your system.
 4. Create a MySQL database named resselpurDB.
